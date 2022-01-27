@@ -13,9 +13,9 @@
   </head>
   <body>
     <header>
-      <nav class="py-4 navbar navbar-expand-lg navbar-dark">
+      <nav class="py-4 navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#home">Portfólio</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -28,18 +28,24 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="ms-auto navbar-nav">
+            <ul class="ms-auto navbar-nav gap-2">
               <li class="nav-item">
-                <a class="nav-link text-light fw-normal" href="#">Sobre mim</a>
+                <a class="nav-link text-light fw-normal" href="#about"
+                  >Sobre mim</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light fw-normal" href="#">Projetos</a>
+                <a class="nav-link text-light fw-normal" href="#projects"
+                  >Projetos</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light fw-normal" href="#">Serviços</a>
+                <a class="nav-link text-light fw-normal" href="#services"
+                  >Serviços</a
+                >
               </li>
               <li class="nav-item">
-                <a class="nav-link text-light fw-normal" href="#"
+                <a class="nav-link text-light fw-normal" href="#skills"
                   >Minhas skills</a
                 >
               </li>
@@ -48,9 +54,9 @@
         </div>
       </nav>
     </header>
-    <main>
-      <section>
-        <div class="container margin-top-115">
+    <main class="margin-top-115">
+      <section id="home">
+        <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6">
               <h1 class="text-light margin-bottom-18">
@@ -79,10 +85,10 @@
         </div>
       </section>
 
-      <section class="margin-top-127">
+      <section class="margin-top-127" id="about">
         <div class="container">
-          <h2 class="text-center text-light">Sobre mim</h2>
-          <p class="text-center w-50 mx-auto text-gray">
+          <h2 class="text-center text-light margin-bottom-30">Sobre mim</h2>
+          <p class="text-center w-50 mx-auto text-gray margin-bottom-85">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -93,32 +99,311 @@
 
           <div class="row">
             <div class="col-lg-3 text-center">
-              <img src="src/assets/img/smile.svg" alt="" />
+              <div class="btn-circle bg-gray-400 mx-auto">
+                <img src="src/assets/img/smile.svg" alt="" />
+              </div>
               <h3 class="text-light mb-1 margin-top-19">Meu Nome</h3>
-              <p class="font-16 text-gray">Bruno Santos</p>
+              <p class="font-16 text-gray mb-0">Bruno Santos</p>
             </div>
 
             <div class="col-lg-3 text-center">
-              <img src="src/assets/img/mail.svg" alt="" />
+              <div class="btn-circle bg-gray-400 mx-auto">
+                <img src="src/assets/img/mail.svg" alt="" />
+              </div>
               <h3 class="text-light mb-1 margin-top-19">E-mail</h3>
-              <p class="font-16 text-gray">devbrunosantos@gmail.com</p>
+              <p class="font-16 text-gray mb-0">devbrunosantos@gmail.com</p>
             </div>
 
             <div class="col-lg-3 text-center">
-              <img src="src/assets/img/instagram.svg" alt="" />
+              <div class="btn-circle bg-gray-400 mx-auto">
+                <img src="src/assets/img/instagram.svg" alt="" />
+              </div>
               <h3 class="text-light mb-1 margin-top-19">Instagram</h3>
-              <p class="font-16 text-gray">@brunosanttt</p>
+              <p class="font-16 text-gray mb-0">@brunosanttt</p>
             </div>
 
             <div class="col-lg-3 text-center">
-              <img src="src/assets/img/phone.svg" alt="" />
+              <div class="btn-circle bg-gray-400 mx-auto">
+                <img src="src/assets/img/phone.svg" alt="" />
+              </div>
               <h3 class="text-light mb-1 margin-top-19">Telefone</h3>
-              <p class="font-16 text-gray">(53) 98146-3520</p>
+              <p class="font-16 text-gray mb-0">(53) 98146-3520</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="margin-top-127" id="projects">
+        <h2 class="text-light text-center margin-bottom-30">Projetos</h2>
+        <div class="container">
+          <div class="row row-cols-1 row-cols-md-3 g-5">
+            <div class="col">
+              <div
+                class="card rounded position-relative bg-gray-400 padding-left-25 padding-right-25 padding-top-20 padding-bottom-20"
+              >
+                <img
+                  src="src/assets/img/pet.PNG"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div class="card-body p-0 margin-top-35">
+                  <h5 class="card-title text-light">Título do projeto</h5>
+                  <p class="card-text text-gray">
+                    Tecnologias: HTML, CSS e JS.
+                  </p>
+                </div>
+                <a
+                  class="position-absolute top-0 bottom-0 start-0 end-0 rounded"
+                  href="https://devsantosbruno.github.io/petshop/"
+                ></a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="card rounded position-relative bg-gray-400 padding-left-25 padding-right-25 padding-top-20 padding-bottom-20"
+              >
+                <img
+                  src="src/assets/img/pet.PNG"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div class="card-body p-0 margin-top-35">
+                  <h5 class="card-title text-light">Título do projeto</h5>
+                  <p class="card-text text-gray">
+                    Tecnologias: HTML, CSS e JS.
+                  </p>
+                </div>
+                <a
+                  class="position-absolute top-0 bottom-0 start-0 end-0 rounded"
+                  href="https://devsantosbruno.github.io/petshop/"
+                ></a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="card rounded position-relative bg-gray-400 padding-left-25 padding-right-25 padding-top-20 padding-bottom-20"
+              >
+                <img
+                  src="src/assets/img/pet.PNG"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div class="card-body p-0 margin-top-35">
+                  <h5 class="card-title text-light">Título do projeto</h5>
+                  <p class="card-text text-gray">
+                    Tecnologias: HTML, CSS e JS.
+                  </p>
+                </div>
+                <a
+                  class="position-absolute top-0 bottom-0 start-0 end-0 rounded"
+                  href="https://devsantosbruno.github.io/petshop/"
+                ></a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="card rounded position-relative bg-gray-400 padding-left-25 padding-right-25 padding-top-20 padding-bottom-20"
+              >
+                <img
+                  src="src/assets/img/pet.PNG"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div class="card-body p-0 margin-top-35">
+                  <h5 class="card-title text-light">Título do projeto</h5>
+                  <p class="card-text text-gray">
+                    Tecnologias: HTML, CSS e JS.
+                  </p>
+                </div>
+                <a
+                  class="position-absolute top-0 bottom-0 start-0 end-0 rounded"
+                  href="https://devsantosbruno.github.io/petshop/"
+                ></a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="card rounded position-relative bg-gray-400 padding-left-25 padding-right-25 padding-top-20 padding-bottom-20"
+              >
+                <img
+                  src="src/assets/img/pet.PNG"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div class="card-body p-0 margin-top-35">
+                  <h5 class="card-title text-light">Título do projeto</h5>
+                  <p class="card-text text-gray">
+                    Tecnologias: HTML, CSS e JS.
+                  </p>
+                </div>
+                <a
+                  class="position-absolute top-0 bottom-0 start-0 end-0 rounded"
+                  href="https://devsantosbruno.github.io/petshop/"
+                ></a>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="card rounded position-relative bg-gray-400 padding-left-25 padding-right-25 padding-top-20 padding-bottom-20"
+              >
+                <img
+                  src="src/assets/img/pet.PNG"
+                  class="card-img-top rounded"
+                  alt="..."
+                />
+                <div class="card-body p-0 margin-top-35">
+                  <h5 class="card-title text-light">Título do projeto</h5>
+                  <p class="card-text text-gray">
+                    Tecnologias: HTML, CSS e JS.
+                  </p>
+                </div>
+                <a
+                  class="position-absolute top-0 bottom-0 start-0 end-0 rounded"
+                  href="https://devsantosbruno.github.io/petshop/"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="margin-top-127" id="services">
+        <h2 class="text-light text-center margin-bottom-30">Serviços</h2>
+
+        <div class="container">
+          <div class="row">
+            <div class="col-9 mx-auto">
+              <div class="row row-cols-1 row-cols-md-2 g-0">
+                <div class="col">
+                  <div
+                    class="card mx-5 rounded bg-gray-400 border-gray-400 p-0 m-0"
+                  >
+                    <div
+                      class="padding-left-30 padding-right-30 padding-top-30 padding-bottom-25 text-center"
+                    >
+                      <img
+                        src="src/assets/img/code.svg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <h2 class="card-title text-gray margin-top-40 mb-0">
+                        Criação<br />de sites
+                      </h2>
+                    </div>
+                    <div
+                      class="borderBottom bg-primary"
+                      style="width: 100%; height: 5px"
+                    ></div>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <div
+                    class="card mx-5 rounded bg-gray-400 border-gray-400 p-0 m-0"
+                  >
+                    <div
+                      class="padding-left-30 padding-right-30 padding-top-30 padding-bottom-25 text-center"
+                    >
+                      <img
+                        src="src/assets/img/smartphone.svg"
+                        class="card-img-top"
+                        alt="..."
+                      />
+                      <h2 class="card-title text-gray margin-top-40 mb-0">
+                        Sites<br />responsivos
+                      </h2>
+                    </div>
+                    <div
+                      class="borderBottom bg-primary"
+                      style="width: 100%; height: 5px"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="margin-top-127" id="skills">
+        <h2 class="text-light text-center margin-bottom-30">Minhas skills</h2>
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div
+                class="bg-gray-400 text-center padding-left-40 padding-right-40 padding-top-35 padding-bottom-35 border border-gray-200"
+              >
+                <i class="fab fa-html5 text-primary"></i>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="bg-gray-400 text-center padding-left-40 padding-right-40 padding-top-35 padding-bottom-35 border border-gray-200"
+              >
+                <i class="fab fa-css3-alt text-primary"></i>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="bg-gray-400 text-center padding-left-40 padding-right-40 padding-top-35 padding-bottom-35 border border-gray-200"
+              >
+                <i class="fab fa-js-square text-primary"></i>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="bg-gray-400 text-center padding-left-40 padding-right-40 padding-top-35 padding-bottom-35 border border-gray-200"
+              >
+                <i class="fab fa-sass text-primary"></i>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="bg-gray-400 text-center padding-left-40 padding-right-40 padding-top-35 padding-bottom-35 border border-gray-200"
+              >
+                <i class="fab fa-git-alt text-primary"></i>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="bg-gray-400 text-center padding-left-40 padding-right-40 padding-top-35 padding-bottom-35 border border-gray-200"
+              >
+                <i class="fab fa-bootstrap text-primary"></i>
+              </div>
+            </div>
+
+            <div class="col">
+              <div
+                class="bg-gray-400 text-center padding-left-40 padding-right-40 padding-top-35 padding-bottom-35 border border-gray-200"
+              >
+                <i class="fab fa-wordpress text-primary"></i>
+              </div>
             </div>
           </div>
         </div>
       </section>
     </main>
     <script src="dist/app.js"></script>
+
+    <footer class="margin-top-185 bg-gray-400 text-center">
+      <p class="text-light mb-0 font-16">
+        Orgulhosamente feito por
+        <a
+          class="text-primary text-decoration-none font-16 fw-bold"
+          href="https://github.com/devsantosbruno"
+          >Bruno Santos</a
+        >
+      </p>
+    </footer>
   </body>
 </html>

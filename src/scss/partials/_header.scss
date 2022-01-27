@@ -1,5 +1,10 @@
 header {
   .navbar {
     background-color: #0c0c0c;
+    .nav-link {
+      &.active {
+        color: $primary !important;
+      }
+    }
   }
 }
