@@ -1,0 +1,10 @@
+footer {
+  .animationName {
+    transition: 1s;
+
+    &:hover {
+      transition: 1s;
+      transform: rotate3d(1, 1, 1, 360deg);
+    }
+  }
+}

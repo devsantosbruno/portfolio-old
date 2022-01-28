@@ -21730,6 +21730,40 @@ iframe {
   overflow: hidden;
 }
 
+header .navbar-brand {
+  letter-spacing: 0;
+  transition: all 0.55s;
+}
+header .navbar-brand:hover,
+header .navbar-brand:active {
+  letter-spacing: 5px;
+}
+header .navbar-brand:after,
+header .navbar-brand:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border: 1px solid rgba(0, 223, 94, 0);
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  width: 0;
+}
+header .navbar-brand:hover:after,
+header .navbar-brand:hover:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-color: #00df5e;
+  transition: width 0.5s ease-in-out;
+  width: 70%;
+}
+header .navbar-brand:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 70%;
+}
 header .navbar {
   background-color: #0c0c0c;
 }
@@ -21737,11 +21771,102 @@ header .navbar .nav-link.active {
   color: #00df5e !important;
 }
 
+footer .animationName {
+  transition: 1s;
+}
+footer .animationName:hover {
+  transition: 1s;
+  transform: rotate3d(1, 1, 1, 360deg);
+}
+
 #services .card .card-img-top {
   width: 56px;
   height: 56px;
 }
 
-#skills i {
+#projects .card:hover .borderLeft {
+  height: 100%;
+  transition: 1s;
+  top: 0;
+  bottom: 0;
+}
+#projects .card:hover .borderBot {
+  width: 100%;
+  transition-delay: 1s;
+  transition-duration: 1s;
+}
+#projects .card:hover .borderTop {
+  width: 100%;
+  transition-delay: 1s;
+  transition-duration: 1s;
+}
+#projects .card:hover .borderRightTop {
+  height: 100%;
+  transition-delay: 2s;
+  transition-duration: 2s;
+}
+#projects .card:hover .borderRightBot {
+  height: 100%;
+  transition-delay: 2s;
+  transition-duration: 2s;
+}
+#projects .card .borderLeft {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 0;
+  width: 2px;
+  background-color: #00df5e;
+  transition-delay: 2s;
+  transition-duration: 1s;
+}
+#projects .card .borderBot {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 0;
+  background-color: #00df5e;
+  transition-delay: 1s;
+  transition-duration: 1s;
+}
+#projects .card .borderTop {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 2px;
+  width: 0;
+  background-color: #00df5e;
+  transition-delay: 1s;
+  transition-duration: 1s;
+}
+#projects .card .borderRightTop {
+  position: absolute;
+  top: 0;
+  bottom: 100%;
+  right: 0;
+  height: 0;
+  width: 2px;
+  background-color: #00df5e;
+  transition-duration: 1s;
+}
+#projects .card .borderRightBot {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 2px;
+  background-color: #00df5e;
+  transition-duration: 1s;
+}
+
+#skills .skill {
+  transition: 1s;
+}
+#skills .skill:hover {
+  border-color: #00df5e !important;
+  transition: 1s;
+}
+#skills .skill i {
   font-size: 80px;
 }
