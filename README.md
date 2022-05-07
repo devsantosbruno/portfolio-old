@@ -16,6 +16,8 @@ Projeto com o intuito de criar um portfólio simples.
 
 •   JavaScript
 
+•   Jquery
+
 
 ## Rodar local
 
